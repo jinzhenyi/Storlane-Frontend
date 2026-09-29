@@ -14,7 +14,7 @@ import { StreamUpload } from "./stream"
  * 3. POST /fs/upload/complete to finalize
  * Falls back to stream upload when the storage does not support it.
  *
- * NOTE: This is the OpenListNext (TSWorker/Workers) upload path. The Go backend
+ * NOTE: This is the Storlane (TSWorker/Workers) upload path. The Go backend
  * uses MultipartUpload instead (see ./multipart.ts). Both are kept; the Go
  * interface and logic are the reference going forward.
  */

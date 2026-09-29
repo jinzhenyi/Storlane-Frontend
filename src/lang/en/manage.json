@@ -30,7 +30,7 @@
     "traffic": "Traffic",
     "plugins": "Plugins"
   },
-  "title": "OpenList Management",
+  "title": "Storlane Management",
   "not_admin": "You are not an admin user, please login with an admin account.",
   "logout_success": "Logout successful",
   "send": "Send",

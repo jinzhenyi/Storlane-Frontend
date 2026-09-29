@@ -26,9 +26,9 @@ main() {
     check_git_version_and_commit
     update_package_version
     if [[ "$LITE_FLAG" == "true" ]]; then
-        archive_name="openlist-frontend-dist-lite-${version_tag}"
+        archive_name="storlane-frontend-dist-lite-${version_tag}"
     else
-        archive_name="openlist-frontend-dist-${version_tag}"
+        archive_name="storlane-frontend-dist-${version_tag}"
     fi
     build_project
     create_version_file
@@ -67,18 +67,18 @@ display_help() {
     echo "  --lite        Build lite version"
     echo ""
     echo "Environment variables:"
-    echo "  OPENLIST_FRONTEND_BUILD_MODE=dev|release (default: dev)"
-    echo "  OPENLIST_FRONTEND_BUILD_COMPRESS=true|false (default: false)"
-    echo "  OPENLIST_FRONTEND_BUILD_ENFORCE_TAG=true|false (default: false)"
-    echo "  OPENLIST_FRONTEND_BUILD_SKIP_I18N=true|false (default: false)"
+    echo "  STORLANE_FRONTEND_BUILD_MODE=dev|release (default: dev)"
+    echo "  STORLANE_FRONTEND_BUILD_COMPRESS=true|false (default: false)"
+    echo "  STORLANE_FRONTEND_BUILD_ENFORCE_TAG=true|false (default: false)"
+    echo "  STORLANE_FRONTEND_BUILD_SKIP_I18N=true|false (default: false)"
 }
 
 # Set default values from environment variables
 set_defaults() {
-    BUILD_TYPE=${BUILD_TYPE:-${OPENLIST_FRONTEND_BUILD_MODE:-dev}}
-    COMPRESS_FLAG=${COMPRESS_FLAG:-${OPENLIST_FRONTEND_BUILD_COMPRESS:-false}}
-    ENFORCE_TAG=${ENFORCE_TAG:-${OPENLIST_FRONTEND_BUILD_ENFORCE_TAG:-false}}
-    SKIP_I18N=${SKIP_I18N:-${OPENLIST_FRONTEND_BUILD_SKIP_I18N:-false}}
+    BUILD_TYPE=${BUILD_TYPE:-${STORLANE_FRONTEND_BUILD_MODE:-dev}}
+    COMPRESS_FLAG=${COMPRESS_FLAG:-${STORLANE_FRONTEND_BUILD_COMPRESS:-false}}
+    ENFORCE_TAG=${ENFORCE_TAG:-${STORLANE_FRONTEND_BUILD_ENFORCE_TAG:-false}}
+    SKIP_I18N=${SKIP_I18N:-${STORLANE_FRONTEND_BUILD_SKIP_I18N:-false}}
     LITE_FLAG=${LITE_FLAG:-false}
 }
 
@@ -173,7 +173,7 @@ fetch_i18n_from_release() {
     local release_tag=${1:-edge}
 
     log_warning "Trying to fetch i18n files from GitHub release: $release_tag"
-    release_response=$(curl -fsSL "https://api.github.com/repos/OpenListTeam/OpenList-Frontend/releases/tags/$release_tag") || {
+    release_response=$(curl -fsSL "https://api.github.com/repos/jinzhenyi/Storlane-Frontend/releases/tags/$release_tag") || {
         log_warning "Failed to fetch release info for $release_tag."
         return 1
     }

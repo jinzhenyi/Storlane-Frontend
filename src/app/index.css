@@ -49,7 +49,7 @@
   flex-shrink: 0;
 }
 
-/* Fixes: https://github.com/OpenListTeam/OpenList-Frontend/issues/26 */
+/* Fixes: https://github.com/jinzhenyi/Storlane-Frontend/issues/26 */
 .hope-notification__list {
   width: unset;
 }

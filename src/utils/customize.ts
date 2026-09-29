@@ -50,13 +50,13 @@ import { isTsWorker } from "~/utils/backend"
  *     （见 `runScripts`），代价是外部脚本会按顺序等待。
  */
 
-/** 占位符注释文本（与 OpenList-Frontend/index.html、Go 版 UpdateIndex() 一致）。 */
+/** 占位符注释文本（与 Storlane-Frontend/index.html、Go 版 UpdateIndex() 一致）。 */
 const HEAD_ANCHOR = "customize head"
 const BODY_ANCHOR = "customize body"
 
 /** index.html 里硬编码的默认图标地址，用于判断服务端是否已经替换过。 */
-const DEFAULT_FAVICON = "https://res.oplist.org/logo/logo.svg"
-const DEFAULT_APPLE_TOUCH_ICON = "https://res.oplist.org/logo/logo.png"
+const DEFAULT_FAVICON = "/logo.svg"
+const DEFAULT_APPLE_TOUCH_ICON = "/logo.svg"
 
 /** 管理页路径段（Go 端对应 conf.ManageHtml）。 */
 const MANAGE_SEGMENT = "/@manage"

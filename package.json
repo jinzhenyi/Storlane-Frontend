@@ -1,19 +1,19 @@
 {
-  "name": "@openlist-frontend/openlist-frontend",
+  "name": "@storlane-frontend/storlane-frontend",
   "version": "4.2.6",
   "type": "module",
   "author": {
-    "name": "The OpenList Projects Contributors",
-    "url": "https://github.com/OpenListTeam"
+    "name": "The Storlane Projects Contributors",
+    "url": "https://github.com/jinzhenyi"
   },
   "description": "A new AList Fork to Anti Trust Crisis",
   "packageManager": "pnpm@11.25.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/OpenListTeam/OpenList-Frontend.git"
+    "url": "git+https://github.com/jinzhenyi/Storlane-Frontend.git"
   },
   "bugs": {
-    "url": "https://github.com/OpenListTeam/OpenList/issues"
+    "url": "https://github.com/jinzhenyi/Storlane/issues"
   },
   "files": [
     "dist"

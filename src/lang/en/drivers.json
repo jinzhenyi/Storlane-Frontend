@@ -124,7 +124,7 @@
     "report_real_size-tips": "Enable to report the real file size during upload",
     "root_folder_id": "Root folder id",
     "sms_code": "Sms code",
-    "sms_code-tips": "Fill this only after OpenList reports that a 139 Mail SMS verification code was sent, then save the storage again.",
+    "sms_code-tips": "Fill this only after Storlane reports that a 139 Mail SMS verification code was sent, then save the storage again.",
     "type": "Type",
     "types": {
       "family": "Family",
@@ -975,7 +975,7 @@
   "Onedrive Sharelink": {
     "disable_disk_usage": "Disable disk usage",
     "enable_direct_upload": "Enable direct upload",
-    "enable_direct_upload-tips": "Allow uploading directly to OneDrive without going through OpenList",
+    "enable_direct_upload-tips": "Allow uploading directly to OneDrive without going through Storlane",
     "password": "Password",
     "root_folder_path": "Root folder path",
     "url": "Url"

@@ -1,6 +1,6 @@
 /**
  * Backend-mode detection: a single frontend codebase that works with both the
- * Go OpenList backend and the OpenListNext (TSWorker / Cloudflare Workers) backend.
+ * Go Storlane backend and the Storlane (TSWorker / Cloudflare Workers) backend.
  *
  * Detection source (priority high -> low):
  *  1. `backend` field returned by `/api/public/settings`:
@@ -30,8 +30,8 @@ export const setBackendKind = (
 
 export const getBackendKind = (): BackendKind => backend
 
-/** True when connected to the OpenListNext (TSWorker / Workers) Hono backend. */
+/** True when connected to the Storlane (TSWorker / Workers) Hono backend. */
 export const isTsWorker = (): boolean => backend === "ts-worker"
 
-/** True when connected to the Go OpenList backend. */
+/** True when connected to the Go Storlane backend. */
 export const isGo = (): boolean => backend === "go"

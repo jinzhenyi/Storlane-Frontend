@@ -8,7 +8,7 @@ import {
 export const useCDN = () => {
   const static_path = joinBase("static")
 
-  // OpenList Resource CDN: https://github.com/OpenListTeam/OpenList-Resource
+  // Storlane Resource CDN: https://github.com/jinzhenyi/Storlane-Resource
   const resource = "https://res.oplist.org.cn"
 
   // npmmirror CDN, whitelist
